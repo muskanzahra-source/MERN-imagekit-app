@@ -1,0 +1,33 @@
+.feed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+.post-card {
+  width: 100%;
+  max-width: 480px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.post-card img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  display: block;
+}
+
+.post-card p {
+  padding: 1rem;
+  font-size: 0.95rem;
+  color: #1f2937;
+  line-height: 1.4;
+}

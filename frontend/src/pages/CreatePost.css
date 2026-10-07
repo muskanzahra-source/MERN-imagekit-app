@@ -1,0 +1,96 @@
+.post-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 1.5rem;
+}
+
+.post-card {
+  width: 100%;
+  max-width: 420px;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.post-card h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.form-group input[type="text"] {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input[type="text"]:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.form-group input[type="file"] {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.form-group input[type="file"]::file-selector-button {
+  padding: 0.5rem 0.9rem;
+  margin-right: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  background-color: #f3f4f6;
+  color: #1f2937;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.form-group input[type="file"]::file-selector-button:hover {
+  background-color: #e5e7eb;
+}
+
+.post-card button[type="submit"] {
+  padding: 0.75rem;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background-color 0.2s;
+  margin-top: 0.5rem;
+}
+
+.post-card button[type="submit"]:hover:not(:disabled) {
+  background-color: #1d4ed8;
+}
+
+.post-card button[type="submit"]:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
